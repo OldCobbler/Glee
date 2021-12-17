@@ -2,6 +2,7 @@ $accent: #fcd7b6;
 $default: #243f4d;
 $link: #7b7b7b;
 $title: #1f2044;
+$btn: #a3bbc8;
 
 
 %dmsans-700{
@@ -23,4 +24,11 @@ $title: #1f2044;
 %rubik-400{
     font-family: 'Rubik-Regular', sans-serif;
     font-weight: 400;
+}
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
 }

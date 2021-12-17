@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset'; 
+@import 'libs';
 @import 'global';
 
 .header{
@@ -100,20 +101,20 @@
         margin-bottom: 8px;
     }
     &__contact{
-    width: 215px;
-    margin-right: 85px;
+    width: 250px;
+    margin-right: 50px;
     }
    
     &__services{
-        width: 120px;
-        margin-right: 180px;
+        width: 250px;
+        margin-right: 50px;
     }
     &__account{
-        width: 100px;
-        margin-right: 200px;
+        width: 250px;
+        margin-right: 50px;
     }
     &__news{
-        width: 270px;
+        max-width: 270px;
     }
     &__newsletter{
         line-height: 24px;
@@ -123,16 +124,18 @@
     &__form{
         max-width: 270px;
         display: flex;
-
+    }
+    &__form-mail{
+        max-width: 170px;
     }
     &__form-mail,
     &__form-btn{
-        padding: 10px 15px;
+        padding: 5px 10px;
         border: none;
         background-color: #fef7f0;
     }
     &__form-btn{
-      background-color: #a3bbc8;
+      background-color: $btn;
       color: #fff;
       cursor: pointer;
     }
@@ -166,6 +169,117 @@
             }
         }
     }
+.slider-top{
+    &__inner{
+        background-color: #fcd7b6;
+        padding: 220px 125px 70px;
+    }
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 205px;
+    }
+    &__title{
+        max-width: 610px;
+        font-size: 72px;
+        line-height: 70px;
+        @extend %rubik-500;
+        margin-bottom: 40px;
+    }
+    &__text{
+        max-width: 370px;
+        @extend %rubik-400;
+        font-size: 18px;
+        line-height: 30px;
+        color: #556d77;
+        margin-bottom: 40px;
+    }
+    &__button{
+        padding: 18px 17px 18px 25px;
+        background-color: $btn;
+        color: #fff;
+        font-size: 15px;
+        line-height: 12px;
+        text-align: center;
+        margin-bottom: 10px;
+        span{
+            font-size: 30px;
+            position: relative;
+            top: 6px;
+            padding-left: 55px;
+        }
+    }
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+        li{  
+            margin: 0 5px;
+            button{
+                border: none;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: #fde3cc;
+                color: #667983;
+                font-size: 11px;
+                line-height: 9px;
+            }
+            &.slick-active{
+                button{
+                color: $default;
+                background-color: #fff;
+                }
+            }
+        }
+    }
+}
+.services{
+    &__inner{
+        display: flex;
+    }
+    &__item + .services__item{
+        border-left: 1px solid #e8e4df;
+    }
+    &__item{
+        display: flex;
+        padding: 45px 30px 45px 108px;
+        width: 600px;
+        background-color: #fef7f0;
+
+    }
+    &__item-img{
+        margin: 10px 25px 0 0;
+    }
+    img{
+        min-width: 100%;
+        max-width: none;
+    }
+    &__item-title{
+        @extend %dmsans-700;
+        font-size: 18px;
+        line-height: 40px;
+        color: #414141;
+    }
+    &__item-text{
+        @extend %dmsans-400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #585858
+    }  
+}
+
+.popup{
+    background-image: url(../images/popup/popup-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    max-width: 1920px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 
