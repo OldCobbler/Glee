@@ -7,7 +7,7 @@ body{
     color: $default;
     font-size: 16px;
     line-height: 24px;
-    @extend %rubik-500;
+    @extend %rubik-400;
     display: flex;
     flex-direction: column;
 }
@@ -32,5 +32,5 @@ a{
     color: $link;
     font-size: 14px;
     line-height: 24px;
-    @extend %rubik-500;
+    @extend %rubik-400;
 }
