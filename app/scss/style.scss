@@ -282,7 +282,7 @@
 
 .product{
     text-align: center;
-    padding: 70px 0 40px;
+    padding: 70px 0 85px;
     .title{
         padding-bottom: 38px;
         
@@ -368,6 +368,74 @@
     &:hover{
         .product-item__link-box{
             transform: translateY(0);
+        }
+    }
+}
+.light{
+    padding: 100px 0 100px;
+    &__inner{
+        display: flex;
+        justify-content: space-between; 
+    }
+    &__inner-lamp{
+        width: 870px;
+        height: 390px; 
+        background-color: #feefe2;
+        display: flex;
+        justify-content: center;
+    }
+    &__inner-lamp + .light__inner-lamp{
+        margin-left: 30px;
+    }
+    &__inner-lamp-img{
+        width: 233px;
+        height: 405px;
+        position: relative;
+    }
+    &__lamp-img{
+        position: absolute;
+        top: -90px;
+    }
+    &__lamp-info{
+        max-width: 367px;
+        width: 100%;
+        padding: 100px 20px 0;
+    }
+    &__title{
+        @extend %dmsans-700;
+        font-size: 25px;
+        line-height: 32px;
+    }
+    &__text{
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 37px;
+    }
+    &__btn{
+        @extend %rubik-500;
+        font-size: 15px;
+        line-height: 12px;
+        color: #436372;
+        padding: 22px 85px 24px 15px;
+        border: 1px solid #b3b7b5;
+        border-radius: 5px;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 22px;
+            height: 9px;
+            background-image: url('../images/icon/arrow.svg');
+            top: 27px;
+            right: 22px;
+        }
+        &:hover{
+            color: $accent;
+            border: 1px solid $accent;
+            &::after{
+                background-image: url('../images/icon/arrow-accent.svg');
+            }
         }
     }
 }
