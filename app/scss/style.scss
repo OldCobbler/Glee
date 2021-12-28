@@ -467,6 +467,95 @@
     }
 }
 
+.articles{
+    padding-top: 120px;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 45px;
+    }
+    &__top-link{
+        @extend %dmsans-700;
+        font-size: 16px;
+        line-height: auto;
+        color: #262626;
+        padding-right: 25px;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            background-image: url(../images/icon/bracket.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 7px;
+            height: 12px;
+            right: 0;
+            top: 6px;
+        }
+    }
+    &__top-photo{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__bottom{
+        background-color: #fef7f0;
+    }
+    &__bottom-inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__bottom-info{
+        background-color: #fff;
+        box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+        max-width: 370px;
+        width: 100%;
+    }
+    &__bottom-partners{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 100px 0 130px;
+    }
+    &__bottom-info-text{
+        @extend %dmsans-500;
+        font-size: 18px;
+        line-height: auto;
+        color: #262626;
+        height: 110px;
+        padding: 30px 54px 20px 30px;
+        position: relative;
+        &::before{
+            content: 'NEWS';
+            position: absolute;
+            width: 103px;
+            height: 30px;
+            background-color: #a3bbc8;
+            text-align: center;
+            border-radius: 14px;
+            padding-top: 3px;
+            color: #fff;
+            top: -17px;
+        }
+        
+    }
+    &__bottom-info-footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 54px 28px 30px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 315px;
+            height: 1px;
+            background-color: #e0e0e0;
+            top: 5px;
+        }
+    }
+    
+}
+
+
 
 
 
