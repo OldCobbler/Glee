@@ -901,7 +901,176 @@
     }
 }
 
+.blog{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        padding: 120px 0 48px;
+    }
+    &__blogs{
+        margin-bottom: 72px;
+    }
+    &__item{
+        max-width: 830px;
+        width: 100%;
+        margin-bottom: 72px;
+    }
+   &__img-box{
+       position: relative;
+       margin-bottom: 42px;
+   }
+   &__img-info{
+       display: flex;
+       position: absolute;
+       bottom: 0px;
+       width: 275px;
+       height: 70px;
+       background-color: $btn;
+       color: #fff;
+   }
+   &__date,
+   &__name{
+       color: #fff;
+       @extend %rubik-400;
+       font-size: 12px;
+       line-height: 30px;
+       padding: 20px 20px 20px 30px;
+   }
+   &__date:hover{
+        color: $accent;
+        .blog__date-icon{
+            path{
+           fill: $accent;
+       }
+    }
+    }
+    &__name:hover{
+        color: $accent;
+        .blog__name-icon{
+            path{
+           fill: $accent;
+       }
+    }    
+   }
+   &__date-icon{
+       position: absolute;
+       top: 21px;
+       left: 10px;
+       path{
+           fill: #fff;
+       }
+   }
+   &__name-icon{
+       position: absolute;
+       top: 21px;
+       right: 98px;
+       path{
+           fill: #fff;
+       }
+   }
+   &__title{
+       font-size: 36px;
+       line-height: 26px;
+       color: #333;
+       @extend  %rubik-400;
+       margin-bottom: 40px;
+   }
+   &__text{
+       @extend %rubik-400;
+       font-size: 16px;
+       line-height: 30px;
+       margin-bottom: 40px;
+   }
+   &__button-link{
+       padding: 20px 85px 25px 20px;
+       border: 1px solid $btn;
+       color: $btn;
+       position: relative;
+       transition: all .3s;
+       path{
+           transition: all .3s;
+           fill: $btn;
+       }
+       span{
+        position: absolute;
+        right: 20px;
+        top: 18px;
+       }
+        &:hover{
+            background-color: $btn;
+            color: #fff;
+            path{
+                fill: #fff;
+            }
+        }
+   }
+   &__page-links{
+       display: flex;
+   }
+   &__page-link{
+       padding: 12px 22px;
+       border: 1px solid $btn;
+       @extend %rubik-400;
+       font-size: 16px;
+       line-height: 30px;
+       color: $default;
+       margin-right: 15px;
+       transition: all .3s;
+       &:hover{
+           background-color: $btn;
+           color: #fff;
+       }  
+   }
 
+   &__sidebar{
+       max-width: 270px;
+       width: 100%;
+       margin-left: 10px;
+   }
+   &__sidebar-search{
+       width: 270px;
+       height: 43px;
+       border: 3px solid #eef2f5;
+       border-radius: 4px;
+       position: relative;
+       margin-bottom: 60px;
+   }
+   &__sidebar-input{
+        width: 220px;
+        height: 37px;
+        padding: 10px;
+        color: $default;
+        border: none;
+        outline: none;
+   }
+   &__sidebar-btn{
+        position: absolute;
+        border: none;
+        right: -2px;
+        border-radius: 4px;
+        padding: 11px 14px 2px 14px;
+        background-color: #eef2f5;
+        cursor: pointer;
+   }
+   &__sidebar-text{
+       font-style: 14px;
+       line-height: 20px;
+       color: #333; 
+   }
+   &__sidebar-date{
+        color: #9a9a9a;
+        path{
+            fill: #9a9a9a;
+        }
+   }
+   &__sidebar-link{
+       border: none;
+   }
+   &__sidebar-img{
+       padding: 0;
+   }
+   
+}
 
 
 
