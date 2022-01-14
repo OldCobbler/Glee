@@ -1494,7 +1494,7 @@
     width: 100%;
     padding-left: 10px;
     &__title{
-        margin-top: 80px;
+        margin-top: 120px;
         font-size: 40px;
         line-height: 26px;
         @extend %rubik-400;
@@ -1517,12 +1517,6 @@
     .product-info__input{
         position: relative;
     }
-    /* .product-info__input{
-        text-align: center;
-        font-size: 15px;
-        line-height: 32px;
-        color: #333;
-    } */
     &__btn{
         padding: 15px 50px;
         color: #fff;
@@ -1716,7 +1710,97 @@
     border-color: #edf1f4
 }
 
+.contacts{
+    &__inner{
+        padding-top: 120px;
+    }
+    &__touch{
+        text-align: center;
+        margin-bottom: 54px;
+    }
+    &__suptitle{
+        @extend %poppins-700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #a3bbc8; 
+        margin-bottom: 18px;
+    }
+    &__title{
+        @extend %dmsans-700;
+        font-size: 35px;
+        height: 57px;
+        color: #436372;
+        margin-bottom: 50px;
+    }
+    &__box{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__btn{
+        width: 370px;
+        padding: 70px 0 80px;
+        background-color: #fbfbfb;
+        border: 1px solid #fbfbfb;
+        cursor: pointer;
+    }
+    &__btn--active{
+        border-color: $btn;
+        .contacts__btn-icon{
+            background-color: $btn;
+            path{
+                fill: #fff;
+            }
+        }
+    }
+    &__btn-icon{
+        padding-top: 20px;
+        width: 80px;
+        height: 80px;
+        background-color: #fff;
+        box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+        top: 50%;
+        margin: 0 auto;
+        border-radius: 18px;
+        margin-bottom: 65px;
+        path{
+            fill: $btn;
+        }
+    }
 
+    &__btn-name{
+        @extend %dmsans-700;
+        font-size: 20px;
+        line-height: 26px;
+        color: #222;
+        margin-bottom: 25px;
+    }
+    &__btn-info{
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #565872;
+    }
+}
+.contacts-content{
+    display: flex;
+    justify-content: space-between;
+    &__form{
+        max-width: 620px;
+        width: 100%;
+    }
+    &__form-name,
+    &__form-mail,
+    &__form-textarea{
+        background-color: #fafafa;
+        border-color: #fafafa;
+    }
+    &__form-btn{
+        border-radius: 5px;
+    }
+    &__map{
+        padding-top: 66px;
+    }
+}
 
 
 

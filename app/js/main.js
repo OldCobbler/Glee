@@ -1,5 +1,10 @@
 $(function(){
 
+    $('.contacts__btn').on('click', function(){
+        $('.contacts__btn').removeClass('contacts__btn--active');
+        $(this).addClass('contacts__btn--active');
+    });
+
     $('.product-related__content').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
