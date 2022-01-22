@@ -26,6 +26,12 @@ $(function(){
         draggable: false,
     });
 
+  $('.contacts__btn').on('click', function(){
+    $('.contacts__btn').removeClass('contacts__btn--active');
+    $(this).addClass('contacts__btn--active');
+  });
+  
+
     $(".rating-star").rateYo({
         starWidth: "11px",
         readOnly: true,
