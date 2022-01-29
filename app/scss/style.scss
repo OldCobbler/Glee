@@ -721,6 +721,41 @@
         display: flex;
         padding: 120px 0;
     }
+    &__filters-btn{
+      display: none ;
+      width: 50px;
+      height: 50px;
+      border: 1px solid $default;
+      border-radius: 5px;
+      padding: 0 5px;
+      margin-bottom: 25px;
+      cursor: pointer;
+      span{
+        margin-top: 24px;
+        width: 100%;
+        height: 2px;
+        background-color: $default;
+        position: relative;
+        &::before{
+          content: '';
+          position: absolute;
+          top: -10px;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: $default;
+        }
+        &::after{
+          content: '';
+          position: absolute;
+          top: 10px;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: $default;
+        }
+      }
+    }
     &__list-item{
         display: flex;
         max-width: 870px;
