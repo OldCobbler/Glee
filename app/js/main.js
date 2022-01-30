@@ -1,5 +1,8 @@
 $(function(){
 
+  $('.shop__filters-btn').on('click', function(){
+    $('.shop__filters').toggleClass('shop__filters--active');
+  });
 
   $('.product-related__content').slick({
     infinite: false,
@@ -7,7 +10,27 @@ $(function(){
     slidesToScroll: 1,
     prevArrow: '.product-related__prev',
     nextArrow: '.product-related__next',
-    
+    responsive: [
+    {
+      breakpoint: 1300,
+      settings: {
+      slidesToShow: 3,
+      }
+    },
+      {
+        breakpoint: 920,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 650,
+        settings: {
+          slidesToShow: 1,
+          adaptiveWidth: true,
+        }
+      }
+    ]
   });
 
   $('.product-tabs__top-item').on('click', function (e) {
@@ -43,6 +66,14 @@ $(function(){
         fade: true,
         slidesToScroll: 1,
         draggable: false,
+        responsive: [
+        {
+          breakpoint: 1000,
+          settings: {
+            draggable: true,
+          }
+        }
+      ]
     });
 
   $('.contacts__btn').on('click', function(){
