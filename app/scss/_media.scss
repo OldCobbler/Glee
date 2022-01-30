@@ -110,12 +110,48 @@
       display: block;
     }
   }
+  .about-us{
+    &__inner{
+      display: block;
+    }
+    .about-us__text::after{
+      max-width: 100%;
+    }
+    .about-us__statistic::after,
+    .about-us__statistic::before{
+      display: none;
+    } 
+
+    &__info{
+      width: 100%;
+      &__text{
+        width: 100%;
+      }
+    }
+    &__img{
+      margin: 0 auto;
+    }
+  }
 }
 
 @media (max-width: 1050px){
   .light{
   &__inner-lamp{
       width: 480px;
+    }
+  }
+  .our-team{
+    &__info{
+      width: 100%;
+    }
+    &__btn{
+      margin-bottom: 20px;
+    }
+    &__inner{
+    display: block;
+    }
+    &__photo{
+      margin-top: 45px;
     }
   }
 }
@@ -397,9 +433,40 @@
   .filter-recent{
     display: none;
   }
+  .statistics{
+    &__wrap{
+      height: 100%;
+    }
+    &__inner{
+      padding-top: 10px;
+    }
+    &__list{
+      flex-wrap: wrap;
+    }
+    &__item{
+      margin: 0 10px 0 10px;
+    }
+  }
 }
 
-
+@media(max-width: 760px){
+  .our-team{
+    &__photo{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__photo-item{
+      margin: 0 auto;
+    }
+  }
+  .about-us{
+    &__statistic{
+      flex-wrap: wrap;
+    }
+    &__statistic-item{
+      margin-bottom: 30px;
+    }
+  }
+}
 
 @media (max-width: 650px){
     .slider-top{
@@ -640,6 +707,30 @@
     }
     &__list-title{
       font-size: 25px;
+    }
+  }
+  .about-us{
+    &__title-number{
+      font-size: 100px;
+    }
+    &__subtitle{
+      font-size: 25px;
+    }
+  }
+  .our-team{
+    &__title{
+      font-size: 25px;
+    }
+    &__photo-table{
+      padding: 0 5px;
+      width: 100%;
+      top: 80%;  
+    }
+    &__name{
+      font-size: 18px;
+    }
+    &__position{
+      font-size: 14px;
     }
   }
 }
